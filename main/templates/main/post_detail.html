@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <img src="{{ post.image.url }}" class="img-fluid" alt="Imagen del post">
+    </div>
+    <div class="col-md-4">
+        <h2 class="text-white">Descripción</h2>
+        <p class="text-white">{{ post.description }}</p>
+        <h3 class="text-white">Comentarios</h3>
+        {% for comment in post.comments.all %}
+        <p class="text-white"><strong>{{ comment.user.username }}:</strong> {{ comment.text }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+body {
+    background-color: #3e2723;  /* Fondo marrón oscuro */
+    color: white;  /* Texto blanco */
+}
+
+.navbar {
+    background-color: #795548;  /* Barra de navegación marrón */
+}
+
+.bg-brown {
+    background-color: #5d4037;  /* Color para las tarjetas y botones */
+}
+
+.text-white {
+    color: white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+h1, h2, h3 {
+    color: white;
+}
